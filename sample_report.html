@@ -1,0 +1,203 @@
+
+    <html>
+    <head>
+    <title>Forensic Report</title>
+
+    <style>
+    body {
+        background-color: #0d1117;
+        color: #c9d1d9;
+        font-family: Consolas, monospace;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #58a6ff;
+    }
+
+    .card {
+        background: #161b22;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 10px;
+        border: 1px solid #30363d;
+    }
+
+    .safe { color: #3fb950; }
+    .critical { color: #f85149; }
+
+    button {
+        background: #21262d;
+        color: #58a6ff;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .dropdown {
+        display: none;
+        margin-top: 10px;
+        padding: 10px;
+        background: #0d1117;
+        border-left: 3px solid #58a6ff;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #30363d;
+    }
+
+    th {
+        color: #58a6ff;
+    }
+    </style>
+
+    <script>
+    function toggle(id) {
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+
+    </head>
+
+    <body>
+
+    <h1> DIGITAL FORENSIC REPORT</h1>
+
+    <div style="text-align:center; font-size: 24px; margin-top:10px;">
+        <span class="critical">
+            THREAT LEVEL: CRITICAL
+        </span>
+    </div>
+    
+    <div class="card">
+    <h2>🛡 SYSTEM STATUS</h2>
+    <p class="critical">CRITICAL</p>
+    <p>Potential attack detected: brute force + privilege escalation</p>
+
+    <button onclick="toggle('status_explain')">Explain</button>
+    <div id="status_explain" class="dropdown">
+    SAFE means no suspicious behavior detected.
+    CRITICAL indicates a potential attack pattern.
+    </div>
+    </div>
+
+    <div class="card">
+    <h2>⚠ ATTACK SUMMARY</h2>
+    <p>Multiple failed logins followed by success and admin access.</p>
+
+    <button onclick="toggle('summary_explain')">Explain</button>
+    <div id="summary_explain" class="dropdown">
+    This summarizes brute force attempts, suspicious logins, and privilege escalation.
+    </div>
+    </div>
+
+    <div class="card">
+    <h2>🕵️ ATTACKER INFO</h2>
+    <p><b>IP:</b> <span class="critical">192.168.1.50</span></p>
+
+    <button onclick="toggle('attacker_explain')">Explain</button>
+    <div id="attacker_explain" class="dropdown">
+    This IP is suspected due to repeated failed login attempts.
+    </div>
+    </div>
+
+    <div class="card">
+    <h2>📊 EVIDENCE TABLE</h2>
+
+    <table>
+    <tr>
+        <th>User</th>
+        <th>IP</th>
+        <th>Event</th>
+        <th>Time</th>
+    </tr>
+    
+        <tr>
+            <td>user1</td>
+            <td>192.168.1.10</td>
+            <td>LOGIN SUCCESS</td>
+            <td>2026-03-31 23:30:06.690151</td>
+        </tr>
+        
+        <tr>
+            <td>user1</td>
+            <td>192.168.1.10</td>
+            <td>LOGIN SUCCESS</td>
+            <td>2026-03-31 23:30:16.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:26.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:27.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:28.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:29.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:30.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN FAILED</td>
+            <td>2026-03-31 23:30:31.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>LOGIN SUCCESS</td>
+            <td>2026-03-31 23:30:46.690151</td>
+        </tr>
+        
+        <tr>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>ADMIN PRIVILEGE</td>
+            <td>2026-03-31 23:31:06.690151</td>
+        </tr>
+        
+    </table>
+    </div>
+
+    </body>
+    </html>
+    
