@@ -1,126 +1,63 @@
-\# 🔐 Digital Forensic Analysis Tool
-
-
+# 🔐 Digital Forensic Analysis Tool
 
 A cybersecurity tool that analyzes Windows Security Logs to detect suspicious activities like brute-force attacks and privilege escalation.
 
+---
 
+## ⚡ Features
 
-\---
+- Detects failed login attempts (Brute Force)
+- Identifies suspicious login patterns
+- Detects privilege escalation
+- Generates detailed forensic timeline
+- Produces interactive HTML report
 
+---
 
-
-\## ⚡ Features
-
-
-
-\- Detects failed login attempts (Brute Force)
-
-\- Identifies suspicious login patterns
-
-\- Detects privilege escalation
-
-\- Generates detailed forensic timeline
-
-\- Produces interactive HTML report
-
-
-
-\---
-
-
-
-\## 🛡 Threat Detection
-
-
+## 🛡 Threat Detection
 
 This tool identifies attack patterns such as:
 
+- Multiple failed logins → brute force attempt
+- Successful login after failures → possible breach
+- Admin privilege assignment → privilege escalation
 
+---
 
-\- Multiple failed logins → brute force attempt
-
-\- Successful login after failures → possible breach
-
-\- Admin privilege assignment → privilege escalation
-
-
-
-\---
-
-
-
-\## 📊 Sample Report
-
-
+## 📊 Sample Report
 
 Open the sample report:
 
+➡️ sample_report.html
 
+---
 
-➡️ sample\_report.html
-
-
-
-\---
-
-
-
-\## 🚀 How to Run
-
-
+## 🚀 How to Run
 
 python main.py
 
-
-
 Choose mode:
+- demo → simulated attack
+- live → real system logs
 
-\- demo → simulated attack
+---
 
-\- live → real system logs
+## 🧠 Output
 
+- Console-based forensic analysis
+- HTML report with:
+  - Threat level
+  - Attack summary
+  - Evidence table
 
+---
 
-\---
-
-
-
-\## 🧠 Output
-
-
-
-\- Console-based forensic analysis
-
-\- HTML report with:
-
-&#x20; - Threat level
-
-&#x20; - Attack summary
-
-&#x20; - Evidence table
-
-
-
-\---
-
-
-
-\## ⚠️ Note
-
-
+## ⚠️ Note
 
 Live mode requires administrator privileges to access Windows Security Logs.
 
+---
 
-
-\---
-
-
-
-\## 👩‍💻 Author
-
-
+## 👩‍💻 Author
 
 Shreya
-
