@@ -1,6 +1,19 @@
 # 🔐 Digital Forensic Analysis Tool
 
-A cybersecurity tool that analyzes Windows Security Logs to detect suspicious activities like brute-force attacks and privilege escalation.
+A cybersecurity tool that detects real-world cyber attacks like brute-force login attempts and privilege escalation using Windows Security Logs.
+
+---
+
+## 🎯 Why This Project?
+
+Most log analysis tools are complex and hard to understand.
+
+This project focuses on:
+- Simple detection of real attack patterns
+- Clear explanation of threats
+- Easy-to-read HTML forensic reports
+
+Even non-technical users can understand what happened in the system.
 
 ---
 
@@ -24,7 +37,7 @@ This tool identifies attack patterns such as:
 
 ---
 
-## 📊 Sample Report
+## 📊 Sample Output (Forensic Report)
 
 Open the sample report:
 
@@ -34,7 +47,9 @@ Open the sample report:
 
 ## 🚀 How to Run
 
+```bash
 python main.py
+```
 
 Choose mode:
 - demo → simulated attack
