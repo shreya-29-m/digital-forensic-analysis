@@ -76,9 +76,4 @@ Live mode requires administrator privileges to access Windows Security Logs.
 ## 👩‍💻 Author
 
 Shreya
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> d218dbae38c32390fe237004dcb870aefc06a985
